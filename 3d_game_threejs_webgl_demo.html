@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Пинг-понг на WebGL и Three.js</title>
+	<style>
+		body {
+			background-color: #000000;
+		}
+		#gameCanvas {
+			background-color: #000000;
+			width: 640px;
+			height: 360px;
+			margin: auto;
+			align: center;
+		}
+		#scoreboard {
+			text-align: center;
+			font-family: Segoe UI, Helvetica, Ubuntu, sans-serif;
+			color: white;
+		}
+		#scores {
+			font-size:600%; 
+			padding:0; 
+			margin:0;
+			color: #ffffff;
+		}
+		#title {
+			background-color: white;
+			color: #000000;
+		}
+		h1 a {color: #000000; text-decoration: none;}
+	</style>
+</head>
+<body onload='setup();'>
+	<div id='gameCanvas'></div>
+	<script src='scripts/three.min.js'></script>
+	<script src='scripts/keyboard.js'></script>
+	<script src='scripts/game.js'></script>
+	<div id='scoreboard'>
+		<h1 id='scores'>0-0</h1>
+		<h1 id='title'><a href="/blog/3d-game-threejs-webgl" title="Пинг-понг на WebGL и Three.js">3D ПИНГ-ПОНГ</a></h1>
+		<h2 id='winnerBoard'>Набравший 7 очков выигрыает!</h2>
+		<h3>A - перемещение влево
+		<br>D - перемещение вправо</h3>
+	</div>
+</body>
+</html>
